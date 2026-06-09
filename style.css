@@ -13,6 +13,10 @@ body {
 }
 
 img { 
+      -webkit-user-select: none; /* Для Safari */
+  -moz-user-select: none;    /* Для Firefox */
+  -ms-user-select: none;     /* Для Internet Explorer/Edge */
+  user-select: none;   
     width: 300px; 
     cursor: pointer; 
     transition: transform 0.15s ease; 
