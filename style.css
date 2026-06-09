@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(https://wallpaper.forfun.com/fetch/2d/2ddc80c5114920bcfb2f82d88733d7aa.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img { 
+    width: 300px; 
+    cursor: pointer; 
+    transition: transform 0.15s ease; 
+} 
+
+img:active { 
+    transform: scale(0.9) rotate(-2deg); 
+} 
+
+.jump { 
+    animation: jump 0.25s ease; 
+} 
+
+@keyframes jump { 
+    0% { transform: scale(1) translateY(0); } 
+    50% { transform: scale(1.05) translateY(-10px); } 
+    100% { transform: scale(1) translateY(0); } 
+} 
+
+.container { 
+    text-align: center; 
+} 
+
+#count { 
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #ed1607; 
+    text-shadow: 0 0 10px rgba(233, 47, 5, 0.6); 
+    margin-bottom: 20px; 
+}
